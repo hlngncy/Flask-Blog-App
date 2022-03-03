@@ -1,6 +1,7 @@
 # Flask-Blog-App
 This is an example of web development with flask framework. Also includes front-end.
 You can use educational or inspirational purposes. I added comment lines as possible for understanding.
+You can find all html codes on templates file.
 
 # Requires 
 You need an sql database and web server. You can use XAMPP for arrange it. Also if you want to use it be careful about database denominations.
