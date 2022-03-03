@@ -1,0 +1,12 @@
+<!--We will use this template for flashing messages on site-->
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+
+    {% for category, message in messages %}
+      <div class="alert alert-danger" role="alert"><!--I use danger type alert for the red color, you can pick whatever you want ^^-->
+        <strong>Well,   </strong>{{message}}<!--The message value is came from flash function on blog.py file-->
+      </div>
+    {% endfor %}
+
+  {% endif %}
+{% endwith %}

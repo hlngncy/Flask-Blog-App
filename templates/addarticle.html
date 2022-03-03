@@ -1,0 +1,12 @@
+{%extends "layout.html"%}
+
+{% block body %}
+<h3>Create an Article</h3>
+<hr>
+{% from "formhelpers.html" import render_field %}
+<form method = "post"><!--With this form structure we are getting info's what we need to create an account-->
+    {{ render_field(form.title, class="form-control")}}
+    {{ render_field(form.content,class="form-control")}}
+    <button type="submit" class="btn btn-danger">Add</button>
+</form>
+{%endblock%}

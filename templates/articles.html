@@ -1,0 +1,16 @@
+<!--This will be our page which is shows all articles-->
+{% extends "layout.html" %}
+{% block body %}
+<h3>Articles</h3>
+<hr>
+{% if article %}
+<ul class="list-group">
+    {%for articles in article%}
+    <li class="list-group-item" ><a href = "article/{{articles.id}}">{{articles.title}}</a></li>
+    {%endfor%}
+</ul>
+{% else %}
+<div class = "alert alert-danger">There is not articles yet!</div>
+{% endif %}
+
+{% endblock body %}

@@ -1,0 +1,15 @@
+<!--This file creates register page-->
+{% extends "layout.html" %}
+{% block body %}
+{% from "formhelpers.html" import render_field %}
+<h3>Create an Account</h3>
+<hr>
+<form method = "post"><!--With this form structure we are getting info's what we need to create an account-->
+    {{ render_field(form.name,class="form-control")}}
+    {{ render_field(form.username, class="form-control")}}
+    {{ render_field(form.mail,class="form-control")}}
+    {{ render_field(form.password,class="form-control")}}
+    {{ render_field(form.confirm,class="form-control")}}
+    <button type="submit" class="btn btn-danger">Create</button>
+</form>
+{% endblock %}
