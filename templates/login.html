@@ -3,7 +3,7 @@
 <h3>Login</h3>
 <hr>
 {% from "formhelpers.html" import render_field %}
-<form method = "post"><!--With this form structure we are getting info's what we need to create an account-->
+<form method = "post"><!--With this form structure we are getting info's what we need to login-->
     {{ render_field(form.username, class="form-control")}}
     {{ render_field(form.password,class="form-control")}}
     <button type="submit" class="btn btn-danger">Login</button>
